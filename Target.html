@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Target</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="/LOGO.png" type="image/x-icon" />
+    <link href="/targetStyle.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- body targetTgl -->
+    <div class="signUp">
+      <div class="boxluar">
+        <div id="judul">Target Baru</div>
+        <div class="tentukan">
+            Tentukan Targetmu!
+        </div>
+        <div class="formBox">
+            <form action="form" method="post" id="form">
+                <div class="question">
+                    <label class="label1" for="name">Nama Target</label>
+                    <input type="text" name="name" id="name" />
+                </div>
+
+                <div class="question">
+                    <label class="label1" for="name">Nominal</label>
+                    <div class="nominal">
+                        <h3>Rp</h3>
+                        <input type="text" name="harga" id="harga" />
+                    </div>
+                </div>
+                <div class="tentukan" id="kapan">
+                  Kapan kamu ingin mencapai targetmu?
+                </div>
+                <div class="tgl">
+                  <button class="ijo">
+                    <p>Pilih Tanggal</p>
+                    </button>
+                    <button class="putih">
+                      <p>Fleksibel</p>
+                      </button>
+                </div>
+                <div class="fleksi">
+                  <button class="putih">
+                    <p>Pilih Tanggal</p>
+                    </button>
+                    <button class="ijo">
+                      <p>Fleksibel</p>
+                      </button>
+                </div>
+                <div class="question">
+                  <label class="label1" for="name">Pilih Tanggal</label>
+                  <input type="date" name="tanggal" id="tanggal" />
+              </div>
+              <div class="question">
+                <label class="label1" for="name">Pilih Nominal Tabung</label>
+                <div class="nominal">
+                    <h3>Rp</h3>
+                    <input type="text" name="harga1" id="harga1" />
+                </div>
+            </div>
+            <div class="versi" id="versitgl">
+              <div class="question2">
+                <div class="label1">Frekuensi Tabung</div>
+                <div class="box">
+                  <select name="" id="selectArea">
+                    <option value="">Harian</option>
+                    <option value="">Bulanan</option>
+                    <option value="">Tahunan</option>
+                  </select>
+                </div>
+              </div>
+              <div class="question2">
+                <label class="label1" for="name">Nominal</label>
+                    <div class="nominalHasil">
+                        <h3>Rp</h3>
+                        <p>2.000.000</p>
+                    </div>
+              </div>
+            </div>
+            <div class="versi" id="versiFlek">
+              <div class="question2">
+                <div class="label1">Frekuensi Tabung</div>
+                <div class="box">
+                  <select name="" id="selectArea" >
+                    <option  value="">Harian</option>
+                    <option value="">Bulanan</option>
+                    <option value="">Tahunan</option>
+                  </select>
+                </div>
+              </div>
+              <div class="question2">
+                <label class="label1" for="name">Pilih Tanggal</label>
+                  <p>22-02-2002</p>
+              </div>
+            </div>
+              </form>
+              <div class="daftar">
+                <a href="Home.html"><button type="button" id="submit">Simpan Target</button></a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- body targetTgl -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      // dibawah brikut buat ngasi titik pas nominal dimasukin 
+      var rupiah = document.getElementById('harga');
+      rupiah.addEventListener('keyup', function(e){
+        rupiah.value = formatRupiah(this.value, 'Rp.');
+      })
+      function formatRupiah(angka, prefix) {
+      var num = angka.replace(/[^,\d]/g, '').toString(),
+      split = num.split(','),
+      sisa = split[0].length % 3,
+      rupiah = split[0].substr(0, sisa),
+      ribuan = split[0].substr(sisa).match(/\d{3}/gi);
+
+      if (ribuan) {
+        sep = sisa ? '.' : '';
+        rupiah += sep + ribuan.join('.');
+      }
+
+      rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
+      return prefix == undefined ? rupiah : rupiah ? rupiah : '';
+}
+
+var rup = document.getElementById('harga1');
+      rup.addEventListener('keyup', function(e){
+        rup.value = formatrup(this.value, 'Rp.');
+      })
+      function formatrup(angka, prefix) {
+      var num = angka.replace(/[^,\d]/g, '').toString(),
+      split = num.split(','),
+      sisa = split[0].length % 3,
+      rup = split[0].substr(0, sisa),
+      ribuan = split[0].substr(sisa).match(/\d{3}/gi);
+
+      if (ribuan) {
+        sep = sisa ? '.' : '';
+        rup += sep + ribuan.join('.');
+      }
+
+      rup = split[1] != undefined ? rup + ',' + split[1] : rup;
+      return prefix == undefined ? rup : rup ? rup : '';
+}
+
+var nom = document.getElementById('harga2');
+      nom.addEventListener('keyup', function(e){
+        nom.value = formatnom(this.value, 'Rp.');
+      })
+      function formatnom(angka, prefix) {
+      var num = angka.replace(/[^,\d]/g, '').toString(),
+      split = num.split(','),
+      sisa = split[0].length % 3,
+      nom = split[0].substr(0, sisa),
+      ribuan = split[0].substr(sisa).match(/\d{3}/gi);
+
+      if (ribuan) {
+        sep = sisa ? '.' : '';
+        nom += sep + ribuan.join('.');
+      }
+
+      nom = split[1] != undefined ? nom + ',' + split[1] : nom;
+      return prefix == undefined ? nom : nom ? nom : '';
+}
+
+
+    </script>
+</body>
+</html>
