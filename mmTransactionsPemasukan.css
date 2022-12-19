@@ -1,0 +1,581 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c6f1e7;
+  font-family: "Poppins", sans-serif;
+}
+
+.batas {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c6f1e7;
+
+  border: 3px solid red;
+}
+
+.judul{
+  font-size: 2vw;
+  font-weight: bold;
+  color: #59606d;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-bottom: 2vw;
+}
+
+.batas label{
+  font-size: 1vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #838181;
+}
+
+.boxluar {
+  width: 55vw;
+  border-radius: 2.1369212504946575vw;
+  margin-top: 3.32409972299169vw;
+  margin-bottom: 2.23189552829442vw;
+  background-color: #f0fff3;
+  padding-top: 2.5326474079936685vw;
+  padding-bottom: 2.374356944994064vw;
+
+  text-align: center;
+
+  border: 0.3957261574990107vw solid #59606d;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.datainput-container label{
+  float: left;
+}
+
+.datainput-container input{
+  float: left;
+}
+
+.datainput-container select{
+  float: left;
+}
+
+.datainput-container{
+  float: left;
+  margin-top: 1.3vw;
+  /* border: solid blanchedalmond; */
+}
+
+/* ubah */
+.pilihan{
+    /* border: solid violet; */
+    width: fit-content;
+    justify-items: center;
+    list-style: none;
+    margin-bottom: 1.8vw;
+    display: flex;
+    gap: 1.5vw;
+}
+
+.pemasukan-container{
+    border: solid #70ACB1;
+    padding: 1.2vw 0vw 1.2vw 0vw;
+    width: 14vw;
+    border-radius: 2vw;
+    background-color: #70ACB1;
+}
+
+.pemasukan-container a{
+    color: white;
+    font-size: 1.35vw;
+}
+
+.alokasi-container{
+    border: solid #ADADBD;
+    padding: 1.2vw 0vw 1.2vw 0vw;
+    width: 14vw;
+    border-radius: 2vw;
+    background-color: #FFFFFF;
+}
+
+.alokasi-container a{
+    color: #ADADBD;
+    font-size: 1.35vw;
+}
+
+.pengeluaran-container{
+    border: solid #ADADBD;
+    padding: 1.2vw 0vw 1.2vw 0vw;
+    width: 14vw;
+    border-radius: 2vw;
+    background-color: #FFFFFF;
+}
+
+.pengeluaran-container a{
+    color: #ADADBD;
+    font-size: 1.35vw;
+}
+/* ubah */
+
+input[type="text"]{
+  background-color: transparent;
+  border: none;
+  width: 45vw;
+  height: 3vw;
+  margin-bottom: 1vw;
+  font-size: 1.2vw;
+  font-weight: 0.3957261574990107vw;
+  color: #838181;
+  /* border: solid violet; */
+}
+
+.form-input1{
+  display: flex;
+  margin-top: 1vw;
+}
+
+.text1{
+  position: relative;
+  padding-left: 3.5vw;
+}
+
+.static-value{
+  /* buat Rp */
+	position:absolute;
+	margin-left:0vw;
+	margin-top:0.5vw;
+	font-size: 1vw;
+    font-weight: bold;
+	color:#70ACB1;
+}
+
+.form-input2{
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+.form-input-container{
+  display: flex;
+  flex-direction:column;
+}
+
+#program{
+  margin-top: 1.1vw;
+  margin-bottom: 1vw;
+  height: 3vw;
+  width: 43vw;
+  font-size: 1.2vw;
+  font-weight: bold;
+  background-color: transparent;
+  border: transparent;
+}
+
+.line1{
+  /* border: black solid; */
+  background-color: black;
+  height: 0.2vw;
+  width: 58vw;
+  opacity: 0.3;
+}
+
+.text{
+  text-align: left;
+}
+
+.tanggal{
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  text-align: left;
+  display: flex;
+}
+
+.gambardiv{
+  position: absolute;
+}
+
+.gambar-kalender{
+  width: 4vw;
+  height: 3vw;
+}
+
+.datediv{
+  position: relative;
+  padding-left: 5vw;
+}
+
+.date{
+  height: 3vw;
+  width: 38vw;
+  background-color: transparent;
+  border: transparent;
+  font-size: 1.3vw;
+  font-weight: 0.3957261574990107vw;
+  padding-left: 2vw;
+  color: #838181;
+}
+
+.judul-opsional{
+  text-align: left;
+  margin-top: 2vw;
+  font-weight: bold;
+  color: #59606d;
+  font-size: 1.5vw;
+}
+
+.nama-transaksi{
+  text-align: left;
+  margin-left: 2vw;
+  margin-top: 0.5vw;
+  font-size: 1vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #838181;
+}
+
+#simpan-transaksi{
+  position: relative;
+  color: #f0fff3;
+  padding: 1vw 3vw;
+  border-radius: 2.1369212504946575vw;
+  border-color: #70acb1;
+  font-size: 1.5vw;
+  font-style: Arial #f0fff3;
+  background-color: #70acb1;
+  font-weight: bold;
+  background: #70acb1;
+  box-shadow: 0px 2px 4px 3px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.simpantransaksi-container{
+  margin-top: 3.3vw;
+  margin-bottom: 0.5vw;
+  align-items: center;
+}
+
+.container1{
+  box-shadow: 0vw 0.31658092599920856vw 0.31658092599920856vw rgba(0, 0, 0, 0.25);
+  padding-left: 1.5829046299960428vw;
+  padding-top: 0.9497427779976256vw;
+  padding-bottom: 0.07914523149980214vw;
+}
+.container2{
+  box-shadow: 0vw 0.31658092599920856vw 0.31658092599920856vw rgba(0, 0, 0, 0.25);
+  margin-top: 1.187178472497032vw;
+}
+
+.opsional-input{
+  padding-left: 1.9786307874950535vw;
+}
+
+/* =====RESPONSIVE===== */
+
+/* Tablet */
+@media screen and (min-width: 427px) and (max-width: 832px) {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.judul{
+  font-size: 4vw;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.batas label{
+  font-size: 2vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+/* ubah */
+.pilihan{
+    /* border: solid violet; */
+    width: fit-content;
+    justify-items: center;
+    list-style: none;
+    margin-bottom: 1.8vw;
+    display: flex;
+    gap: 1.5vw;
+  }
+  
+  .pemasukan-container{
+      padding: 0.9vw 0vw 0.9vw 0vw;
+      width: 14vw;
+      border-radius: 2vw;
+  }
+  
+  .pemasukan-container a{
+      font-size: 1.7vw;
+  }
+  
+  .alokasi-container{
+      padding: 0.9vw 0vw 0.9vw 0vw;
+      width: 14vw;
+      border-radius: 2vw;
+  }
+  
+  .alokasi-container a{
+      font-size: 1.7vw;
+  }
+  
+  .pengeluaran-container{
+      padding: 0.9vw 0vw 0.9vw 0vw;
+      width: 14vw;
+      border-radius: 2vw;
+  }
+  
+  .pengeluaran-container a{
+      font-size: 1.7vw;
+  }
+  /* ubah */
+
+input[type="text"]{
+  background-color: transparent;
+  border: none;
+  width: 45vw;
+  height: 3vw;
+  margin-bottom: 1vw;
+  font-size: 1.8vw;
+  font-weight: 0.3957261574990107vw;
+}
+
+.static-value{
+  /* buat Rp */
+    position:absolute;
+    margin-left:0vw;
+    margin-top:0.5vw;
+    font-size: 1.8vw;
+    font-weight: bold;
+}
+
+#program{
+  margin-top: 1.1vw;
+  margin-bottom: 1vw;
+  height: 3vw;
+  width: 43vw;
+  font-weight: bold;
+  background-color: transparent;
+  border: transparent;
+  font-size: 1.8vw;
+}
+
+.datediv{
+  position: relative;
+  padding-left: 5vw;
+}
+
+.date{
+  height: 3vw;
+  width: 38vw;
+  background-color: transparent;
+  border: transparent;
+  padding-left: 2vw;
+  font-size: 1.8vw;
+  font-weight: 0.3957261574990107vw;
+}
+
+.judul-opsional{
+  text-align: left;
+  margin-top: 2vw; 
+  font-weight: bold;
+  font-size: 2.5vw;
+}
+
+.nama-transaksi{
+  text-align: left;
+  margin-left: 2vw;
+  margin-top: 0.5vw;
+  font-size: 2vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+#simpan-transaksi{
+  position: relative;
+  padding: 1vw 3vw;
+  border-radius: 2.1369212504946575vw;
+  border-color: #70acb1;
+  font-size: 2vw;
+  font-style: Arial #f0fff3;
+  background-color: #70acb1;
+  font-weight: bold;
+  background: #70acb1;
+  box-shadow: 0px 2px 4px 3px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+}
+
+/* HP */
+@media screen and (min-width: 0px) and (max-width: 426px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .judul{
+    font-size: 5vw;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+  }
+
+  .datainput-container{
+    float: left;
+    margin-top: 1.3vw;
+    /* border: solid blanchedalmond; */
+  }
+  
+  .batas label{
+    font-size: 2.8vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+  }
+
+/* ubah */
+.pilihan{
+    /* border: solid violet; */
+    width: fit-content;
+    justify-items: center;
+    list-style: none;
+    margin-bottom: 1.8vw;
+    display: flex;
+    gap: 1.5vw;
+  }
+  
+  .pemasukan-container{
+      padding: 0.6vw 0vw 2.2vw 0vw;
+      width: 16.5vw;
+      border-radius: 2vw;
+  }
+  
+  .pemasukan-container a{
+      font-size: 2.3vw;
+  }
+  
+  .alokasi-container{
+      padding: 0.6vw 0vw 2.2vw 0vw;
+      width: 16.5vw;
+      border-radius: 2vw;
+  }
+  
+  .alokasi-container a{
+      font-size: 2.3vw;
+  }
+  
+  .pengeluaran-container{
+      padding: 0.6vw 0vw 2.2vw 0vw;
+      width: 16.5vw;
+      border-radius: 2vw;
+  }
+  
+  .pengeluaran-container a{
+      font-size: 2.3vw;
+  }
+  /* ubah */
+
+  .gambar-kalender{
+    width: 0vw;
+    height: 0vw;
+  }
+  
+  input[type="text"]{
+    background-color: transparent;
+    border: none;
+    width: 45vw;
+    height: 3vw;
+    margin-bottom: 1vw;
+    font-size: 2.3vw;
+    font-weight: 0.3957261574990107vw;
+  }
+
+  .text1{
+    margin-left: 1.5vw;
+  }
+  
+  .static-value{
+    /* buat Rp */
+    position:absolute;
+    margin-left:0vw;
+    margin-top:0.5vw;
+    font-size: 2.3vw;
+    font-weight: bold;
+  }
+  
+  #program{
+    margin-top: 1.1vw;
+    margin-bottom: 1vw;
+    height: 3vw;
+    width: 43vw;
+    font-weight: bold;
+    background-color: transparent;
+    border: transparent;
+    font-size: 2.3vw;
+  }
+  
+  .datediv{
+    position: relative;
+    padding-left: 5vw;
+  }
+  
+  .date{
+    height: 3vw;
+    width: 38vw;
+    background-color: transparent;
+    border: transparent;
+    font-size: 2.5vw;
+    font-weight: 0.3957261574990107vw;
+  }
+  
+  .judul-opsional{
+    text-align: left;
+    margin-top: 2vw; 
+    font-weight: bold;
+    font-size: 3.5vw;
+  }
+  
+  .nama-transaksi{
+    text-align: left;
+    margin-left: 2vw;
+    margin-top: 0.5vw;
+    font-size: 2.8vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+  }
+  
+  #simpan-transaksi{
+    position: relative;
+    color: #f0fff3;
+    padding: 1vw 3vw;
+    border-radius: 3vw;
+    border-color: #70acb1;
+    font-size: 3.5vw;
+    font-style: Arial #f0fff3;
+    background-color: #70acb1;
+    font-weight: bold;
+    background: #70acb1;
+    box-shadow: 0px 2px 4px 3px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    margin-top: 1.5vw;
+  }
+}
