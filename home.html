@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  </head>
+  <link rel="shortcut icon" href="/LOGO.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="homeStyle.css" />
+  <body>
+    <!-- Awal home-->
+    <!-- bagian dompet -->
+    <div class="wallet">
+      <div class="dompet">
+        <img src="/keperluan home/dompet.png" alt="" />
+        <div class="textDom">
+          <h3>DOMPETKU:</h3>
+          <div class="nom">
+            <p>Rp</p>
+            <h2>3,000,000</h2>
+          </div>
+        </div>
+      </div>
+      <div class="pict">
+        <img src="/keperluan home/babi.png" alt="" />
+        <img src="/keperluan home/calculator.png" alt="" id="gone" />
+      </div>
+    </div>
+    <!-- bagian pemasukan pengeluaran -->
+    <div class="catatan">
+      <div class="kotak">
+        <div class="teks" id="masuk">
+          <img src="/keperluan home/pemasukn.png" alt="" />
+          <h3>Pemasukan</h3>
+        </div>
+        <div class="nominal">
+          <p>Rp</p>
+          <h3>3,900,000</h3>
+        </div>
+      </div>
+      <div class="kotak">
+        <div class="teks" id="keluar">
+          <img src="/keperluan home/pengeluaran.png" alt="" />
+          <h3>Pengeluaran</h3>
+        </div>
+        <div class="nominal">
+          <p>Rp</p>
+          <h3>900,000</h3>
+        </div>
+      </div>
+      <div class="kotak">
+        <div class="teks" id="tab">
+          <img src="/keperluan home/tabungan.png" alt="" />
+          <h3>Tabungan</h3>
+        </div>
+        <div class="nominal">
+          <p>Rp</p>
+          <h3>3,000,000</h3>
+        </div>
+      </div>
+      <div class="tambah">
+        <button>
+          <img src="/keperluan home/tambah.png" alt="" />
+        </button>
+      </div>
+    </div>
+    <!-- bagian news -->
+    <div class="news">
+      <div class="teksNews">
+        <img src="/keperluan home/news.png" alt="" />
+        <p>Berita untuk kamu</p>
+      </div>
+      <div class="newsBox">
+        <div class="carousel">
+          <a href="/news.html" class="berita">
+            <img src="/news/phk.png" alt="" />
+            <div class="teksBerita">
+              <h6>7 Jurus Jitu Menyiapkan Modal Bagi Korban PHK yang Ingin Wirausaha</h6>
+              <p>Gelombang pemutusan hubungan kerja (PHK) diperkirakan masih terus menghantui..</p>
+            </div>
+          </a>
+          <a href="#" class="berita" draggable="false">
+            <img src="/news/goto.png" alt="" />
+            <div class="teksBerita">
+              <h6>GoTo Respons Soal Isu PHK, Saham Melesat Hari Ini</h6>
+              <p>PT GoTo Gojek Tokopedia Tbk (GOTO) buka suara terkait kabar akan melakukan pemutusan...</p>
+            </div>
+          </a>
+          <a href="#" class="berita" draggable="false">
+            <img src="/news/emas.png" alt="" />
+            <div class="teksBerita">
+              <h6>Inflasi AS Turun, Harga Emas Menguat di Rp974 per Gram</h6>
+              <p>Harga jual emas PT Aneka Tambang (Persero) Tbk atau Antam berada di posisi ..</p>
+            </div>
+          </a>
+          <a href="#" class="berita" draggable="false">
+            <img src="/news/inflasi.png" alt="" />
+            <div class="teksBerita">
+              <h6>Menanti Rilis Data Inflasi AS, IHSG Diprediksi Lesu Pagi Ini</h6>
+              <p>Indeks Harga Saham Gabungan (IHSG) diperkirakan melemah pada perdagangan Jumat (11/11)..</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- bagian rekomen -->
+    <div class="rekomen">
+      <div class="RekomText">
+        <img src="/keperluan home/rekomen medal.png" alt="" />
+        <p>6 Rekomendasi Saham</p>
+      </div>
+      <div class="RekomRow">
+        <button class="RekomBox">
+          <a href="/bbca.html">
+            <img src="/keperluan home/rekomensaham/bca.png" alt="" />
+            <div class="boxText">
+              <h3>BBCA</h3>
+              <h6>8850</h6>
+              <p id="naik">50(0.57%)</p>
+            </div>
+          </a>
+        </button>
+        <button class="RekomBox">
+          <img src="/keperluan home/rekomensaham/bbri.png" alt="" />
+          <div class="boxText">
+            <h3>BBRI</h3>
+            <h6>4650</h6>
+            <p id="naik">120(2.65%)</p>
+          </div>
+        </button>
+        <button class="RekomBox">
+          <img src="/keperluan home/rekomensaham/itmg.png" alt="" />
+          <div class="boxText">
+            <h3>ITMG</h3>
+            <h6>37550</h6>
+            <p id="turun">2825(7.00%)</p>
+          </div>
+        </button>
+        <button class="RekomBox">
+          <img src="/keperluan home/rekomensaham/adro.png" alt="" />
+          <div class="boxText">
+            <h3>ADRO</h3>
+            <h6>3490</h6>
+            <p id="naik">10(0.29%)</p>
+          </div>
+        </button>
+        <button class="RekomBox">
+          <img src="/keperluan home/rekomensaham/mdka.png" alt="" />
+          <div class="boxText">
+            <h3>MDKA</h3>
+            <h6>4450</h6>
+            <p id="naik">350(8.54%)</p>
+          </div>
+        </button>
+        <button class="RekomBox">
+          <img src="/keperluan home/rekomensaham/bmri.png" alt="" />
+          <div class="boxText">
+            <h3>BMRI</h3>
+            <h6>10425</h6>
+            <p id="naik">325(3.22%)</p>
+          </div>
+        </button>
+      </div>
+    </div>
+    <!-- bagian grafik dan running grade -->
+    <div class="GrafikTrade">
+      <div class="grafikBox">
+        <h1>Indeks Harga Saham Gabungan</h1>
+        <div class="period">
+          <button class="time">1D</button>
+          <button class="time">1W</button>
+          <button class="time">1M</button>
+          <button class="time">3M</button>
+          <button class="time">1Y</button>
+          <button class="time">5Y</button>
+          <button class="time">ALL</button>
+          <div class="price">
+            <h3>7019,39</h3>
+            <p id="turun">-69.54(-0.98%)</p>
+          </div>
+        </div>
+        <img src="/keperluan home/IHSG GRAFIK.png" alt="" />
+      </div>
+      <div class="runningBox">
+        <h1>Running Trade</h1>
+        <table class="running-table">
+          <thead>
+            <td>Waktu</td>
+            <td>Kode</td>
+            <td>Aksi</td>
+            <td>Harga</td>
+            <td>Vol</td>
+          </thead>
+          <tr>
+            <td>11:29:59</td>
+            <td>PNLF</td>
+            <td id="naik">Beli</td>
+            <td>438</td>
+            <td>728</td>
+          </tr>
+          <tr>
+            <td>11:29:59</td>
+            <td>PNLF</td>
+            <td id="naik">Beli</td>
+            <td>438</td>
+            <td>728</td>
+          </tr>
+          <tr>
+            <td>11:29:59</td>
+            <td>PNLF</td>
+            <td id="naik">Beli</td>
+            <td>438</td>
+            <td>728</td>
+          </tr>
+          <tr>
+            <td>11:29:59</td>
+            <td>PNLF</td>
+            <td id="naik">Beli</td>
+            <td>438</td>
+            <td>728</td>
+          </tr>
+          <tr>
+            <td>11:29:59</td>
+            <td>PNLF</td>
+            <td id="naik">Beli</td>
+            <td>438</td>
+            <td>728</td>
+          </tr>
+          <tr>
+            <td>11:29:59</td>
+            <td>PNLF</td>
+            <td id="naik">Beli</td>
+            <td>438</td>
+            <td>728</td>
+          </tr>
+          <tr>
+            <td>11:29:59</td>
+            <td>PNLF</td>
+            <td id="naik">Beli</td>
+            <td>438</td>
+            <td>728</td>
+          </tr>
+          <tr>
+            <td>11:29:59</td>
+            <td>PNLF</td>
+            <td id="turun">Jual</td>
+            <td>438</td>
+            <td>728</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- bagian saham, crypto, forex -->
+    <div class="invest">
+      <!-- bagian stocks -->
+      <h3 class="judul">Stocks</h3>
+      <div class="listInvest">
+        <button class="InvestBox">
+          <a href="/bbca.html">
+            <img src="/keperluan home/rekomensaham/bca.png" alt="" />
+            <div class="boxText">
+              <h3>BBCA</h3>
+              <h6>8850</h6>
+              <p id="naik">50(0.57%)</p>
+            </div>
+          </a>
+        </button>
+        <button class="InvestBox">
+          <img src="/keperluan home/rekomensaham/bbri.png" alt="" />
+          <div class="boxText">
+            <h3>BBRI</h3>
+            <h6>4650</h6>
+            <p id="naik">120(2.65%)</p>
+          </div>
+        </button>
+        <button class="InvestBox">
+          <img src="/keperluan home/rekomensaham/itmg.png" alt="" />
+          <div class="boxText">
+            <h3>ITMG</h3>
+            <h6>37550</h6>
+            <p id="turun">2825(7.00%)</p>
+          </div>
+        </button>
+        <button class="InvestBox">
+          <img src="/keperluan home/rekomensaham/adro.png" alt="" />
+          <div class="boxText">
+            <h3>ADRO</h3>
+            <h6>3490</h6>
+            <p id="naik">10(0.29%)</p>
+          </div>
+        </button>
+        <button class="InvestBox" id="gone">
+          <img src="/keperluan home/rekomensaham/MDKA.png" alt="" />
+          <div class="boxText">
+            <h3>MDKA</h3>
+            <h6>4450</h6>
+            <p id="naik">350(8.54%)</p>
+          </div>
+        </button>
+        <button class="InvestBox" id="gone">
+          <img src="/keperluan home/rekomensaham/bmri.png" alt="" />
+          <div class="boxText">
+            <h3>BMRI</h3>
+            <h6>10425</h6>
+            <p id="naik">325(3.22%)</p>
+          </div>
+        </button>
+        <button class="panah">
+          <img src="/keperluan home/panahInvest.png" alt="" />
+        </button>
+      </div>
+      <!-- bagian crypto -->
+      <h3 class="judul">Crypto</h3>
+      <div class="listInvest">
+        <button class="InvestBox">
+          <img src="/keperluan home/keperluan investasi home/BTC LOGO.png" alt="" />
+          <div class="boxText">
+            <h3>BTC</h3>
+            <h6>$15405</h6>
+            <p id="turun">645(4.02%)</p>
+          </div>
+        </button>
+        <button class="InvestBox">
+          <img src="/keperluan home/keperluan investasi home//ETH LOGO.png" alt="" />
+          <div class="boxText">
+            <h3>ETH</h3>
+            <h6>$1134.5</h6>
+            <p id="turun">75(6.20%)</p>
+          </div>
+        </button>
+        <button class="InvestBox">
+          <img src="/keperluan home/keperluan investasi home//ADA LOGO.png" alt="" />
+          <div class="boxText">
+            <h3>ADA</h3>
+            <h6>$0.32</h6>
+            <p id="turun">0.0071(2.15%)</p>
+          </div>
+        </button>
+        <button class="InvestBox">
+          <img src="/keperluan home/keperluan investasi home//BNB LOGO.png" alt="" />
+          <div class="boxText">
+            <h3>BNB</h3>
+            <h6>$270.47</h6>
+            <p id="turun">5.02(1.82%)</p>
+          </div>
+        </button>
+        <button class="InvestBox" id="gone">
+          <img src="/keperluan home/keperluan investasi home//XRP LOGO.png" alt="" />
+          <div class="boxText">
+            <h3>XRP</h3>
+            <h6>$0.33</h6>
+            <p id="turun">0.0077(2.27%)</p>
+          </div>
+        </button>
+        <button class="InvestBox" id="gone">
+          <img src="/keperluan home/keperluan investasi home//DOGE LOGO.png" alt="" />
+          <div class="boxText">
+            <h3>DOGE</h3>
+            <h6>$0.082</h6>
+            <p id="turun">0.0017(1.97%)</p>
+          </div>
+        </button>
+        <button class="panah">
+          <img src="/keperluan home/panahInvest.png" alt="" />
+        </button>
+      </div>
+      <!-- bagian forex -->
+      <h3 class="judul">Forex</h3>
+      <div class="listInvest">
+        <button class="InvestBox">
+          <img src="/keperluan home/keperluan investasi home//EURUSD.png" alt="" />
+          <div class="boxText">
+            <h3>EURUSD</h3>
+            <h6>$1.03</h6>
+            <p id="turun">0.002(0.28%)</p>
+          </div>
+        </button>
+        <button class="InvestBox">
+          <img src="/keperluan home/keperluan investasi home//JPYUSD.png" alt="" />
+          <div class="boxText">
+            <h3>JPYUSD</h3>
+            <h6>$0.007</h6>
+            <p id="turun">0.00002(0.39%)</p>
+          </div>
+        </button>
+        <button class="InvestBox">
+          <img src="/keperluan home/keperluan investasi home//EURGBP.png" alt="" />
+          <div class="boxText">
+            <h3>EURGBP</h3>
+            <h6>£0.877</h6>
+            <p id="naik">0.003(0.35%)</p>
+          </div>
+        </button>
+        <button class="InvestBox">
+          <img src="/keperluan home/keperluan investasi home//EURJPY.png" alt="" />
+          <div class="boxText">
+            <h3>EURJPY</h3>
+            <h6>¥143.92</h6>
+            <p id="naik">0.277(0.19%)</p>
+          </div>
+        </button>
+        <button class="InvestBox" id="gone">
+          <img src="/keperluan home/keperluan investasi home//GBPAUD.png" alt="" />
+          <div class="boxText">
+            <h3>GBPAUD</h3>
+            <h6>$1.758</h6>
+            <p id="turun">0.004(0.26%)</p>
+          </div>
+        </button>
+        <button class="InvestBox" id="gone">
+          <img src="/keperluan home/keperluan investasi home//GBPUSD.png" alt="" />
+          <div class="boxText">
+            <h3>GBPUSD</h3>
+            <h6>$1.176</h6>
+            <p id="turun">0.007(0.59%)</p>
+          </div>
+        </button>
+        <button class="panah">
+          <img src="/keperluan home/panahInvest.png" alt="" />
+        </button>
+      </div>
+    </div>
+    <!-- akhir home -->
+    <script src="/HomeJS.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
